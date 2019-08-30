@@ -6,7 +6,12 @@ price_data <- read.csv("pbk_regio_note.csv", header = TRUE, sep = ";")
 loc_metadata <- read.csv("loc_codes.csv", header = TRUE, sep = ";")
 
 
+regions <- c('Nederland', 'Noord-Nederland', 'Oost-Nederland','West-Nederland','Zuid-Nederland', 'Groningen', 'Friesland', 'Drenthe', 'Overijssel', 'Flevoland', 'Gelderland', 'Utrecht', 
+            'Noord-Holland', 'Zuid-Holland', 'Zeeland', 'Noord-Brabant', 'Limburg', 'Amsterdam','Den-Haag','Rotterdam','Utrecht (Gemeente)')
+
 #Data Cleaning
+
+
 
 # add region codes
 colnames(price_data)[2] <- "Code"
